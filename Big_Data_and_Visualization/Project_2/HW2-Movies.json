@@ -1,0 +1,1846 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Gross",
+    "description": "Remove column Gross"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "YEAR",
+          "columnName": "YEAR",
+          "query": "[IV]",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "VOTES",
+    "expression": "grel:if(isBlank(value), 0, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VOTES using expression grel:if(isBlank(value), 0, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "YEAR",
+          "columnName": "YEAR",
+          "query": "[IV]",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "RunTime",
+    "expression": "grel:if(isBlank(value), 0, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RunTime using expression grel:if(isBlank(value), 0, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "YEAR",
+          "columnName": "YEAR",
+          "query": "[IV]",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "RATING",
+    "expression": "grel:if(isBlank(value), 0, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RATING using expression grel:if(isBlank(value), 0, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "YEAR",
+          "columnName": "YEAR",
+          "query": "[IV]",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "RATING",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RATING using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "YEAR",
+          "columnName": "YEAR",
+          "query": "[IV]",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "VOTES",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VOTES using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "YEAR",
+          "columnName": "YEAR",
+          "query": "[IV]",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "RunTime",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RunTime using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "YEAR",
+          "columnName": "YEAR",
+          "query": "[IV]",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "VOTES",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VOTES using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RATING",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RATING using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VOTES",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VOTES using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RunTime",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RunTime using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "VOTES",
+          "expression": "value",
+          "columnName": "VOTES",
+          "from": 0,
+          "to": 1000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "VOTES",
+    "expression": "grel:value.replace(\",\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VOTES using expression grel:value.replace(\",\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "VOTES",
+          "expression": "value",
+          "columnName": "VOTES",
+          "from": 0,
+          "to": 1000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "VOTES",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VOTES using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VOTES",
+    "expression": "grel:if(isBlank(value), 0, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VOTES using expression grel:if(isBlank(value), 0, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "GENRE",
+    "expression": "grel:if(isBlank(value), \"N/A\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column GENRE using expression grel:if(isBlank(value), \"N/A\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STARS",
+    "expression": "grel:if(isBlank(value), \"N/A\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STARS using expression grel:if(isBlank(value), \"N/A\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ONE-LINE",
+    "expression": "grel:if(isBlank(value), \"N/A\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ONE-LINE using expression grel:if(isBlank(value), \"N/A\", value)"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "YEAR",
+          "expression": "value",
+          "columnName": "YEAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(XXIII)",
+                "l": "(XXIII)"
+              }
+            },
+            {
+              "v": {
+                "v": "(XIV) (2017)",
+                "l": "(XIV) (2017)"
+              }
+            },
+            {
+              "v": {
+                "v": "(VII)",
+                "l": "(VII)"
+              }
+            },
+            {
+              "v": {
+                "v": "(XLI)",
+                "l": "(XLI)"
+              }
+            },
+            {
+              "v": {
+                "v": "(VIII)",
+                "l": "(VIII)"
+              }
+            },
+            {
+              "v": {
+                "v": "(XII)",
+                "l": "(XII)"
+              }
+            },
+            {
+              "v": {
+                "v": "(XI)",
+                "l": "(XI)"
+              }
+            },
+            {
+              "v": {
+                "v": "(XIII)",
+                "l": "(XIII)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "YEAR",
+          "expression": "value",
+          "columnName": "YEAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "8.9",
+                "l": "8.9"
+              }
+            },
+            {
+              "v": {
+                "v": "(III)",
+                "l": "(III)"
+              }
+            },
+            {
+              "v": {
+                "v": " History            \"",
+                "l": " History            \""
+              }
+            },
+            {
+              "v": {
+                "v": "6.8",
+                "l": "6.8"
+              }
+            },
+            {
+              "v": {
+                "v": " Drama",
+                "l": " Drama"
+              }
+            },
+            {
+              "v": {
+                "v": "5.2",
+                "l": "5.2"
+              }
+            },
+            {
+              "v": {
+                "v": "5.3",
+                "l": "5.3"
+              }
+            },
+            {
+              "v": {
+                "v": "(V)",
+                "l": "(V)"
+              }
+            },
+            {
+              "v": {
+                "v": "(Video)",
+                "l": "(Video)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II)",
+                "l": "(II)"
+              }
+            },
+            {
+              "v": {
+                "v": "(VI)",
+                "l": "(VI)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I)",
+                "l": "(I)"
+              }
+            },
+            {
+              "v": {
+                "v": "(IV)",
+                "l": "(IV)"
+              }
+            },
+            {
+              "v": {
+                "v": "(IX)",
+                "l": "(IX)"
+              }
+            },
+            {
+              "v": {
+                "v": " Comedy",
+                "l": " Comedy"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "YEAR",
+          "expression": "value",
+          "columnName": "YEAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(II) (2012)",
+                "l": "(II) (2012)"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2020)",
+                "l": "(III) (2020)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2013– )",
+                "l": "(2013– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2021)",
+                "l": "(III) (2021)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2011)",
+                "l": "(II) (2011)"
+              }
+            },
+            {
+              "v": {
+                "v": "(IV) (2016)",
+                "l": "(IV) (2016)"
+              }
+            },
+            {
+              "v": {
+                "v": "(VI) (2019)",
+                "l": "(VI) (2019)"
+              }
+            },
+            {
+              "v": {
+                "v": "(IV) (2017)",
+                "l": "(IV) (2017)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2015)",
+                "l": "(II) (2015)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2013)",
+                "l": "(II) (2013)"
+              }
+            },
+            {
+              "v": {
+                "v": "(IV) (2018)",
+                "l": "(IV) (2018)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2014)",
+                "l": "(II) (2014)"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2012)",
+                "l": "(III) (2012)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2020)",
+                "l": "(2020)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2017)",
+                "l": "(II) (2017)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2014 Video)",
+                "l": "(2014 Video)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2021– )",
+                "l": "(I) (2021– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2012– )",
+                "l": "(II) (2012– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(VI) (2018)",
+                "l": "(VI) (2018)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2016)",
+                "l": "(II) (2016)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2021)",
+                "l": "(2021)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2004)",
+                "l": "(II) (2004)"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2010)",
+                "l": "(III) (2010)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2022– )",
+                "l": "(I) (2022– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2022)",
+                "l": "(2022)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2019)",
+                "l": "(II) (2019)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2014– )",
+                "l": "(2014– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2011)",
+                "l": "(III) (2011)"
+              }
+            },
+            {
+              "v": {
+                "v": "(VI) (2016)",
+                "l": "(VI) (2016)"
+              }
+            },
+            {
+              "v": {
+                "v": "(IV) (2014)",
+                "l": "(IV) (2014)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2018)",
+                "l": "(II) (2018)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2011)",
+                "l": "(2011)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2023)",
+                "l": "(2023)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2009)",
+                "l": "(I) (2009)"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2016)",
+                "l": "(III) (2016)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2008)",
+                "l": "(I) (2008)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2022– )",
+                "l": "(2022– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2017)",
+                "l": "(III) (2017)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2016– )",
+                "l": "(II) (2016– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2019)",
+                "l": "(I) (2019)"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2014)",
+                "l": "(III) (2014)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2021– )",
+                "l": "(2021– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2018)",
+                "l": "(I) (2018)"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2015)",
+                "l": "(III) (2015)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2017)",
+                "l": "(I) (2017)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2005)",
+                "l": "(I) (2005)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2020)",
+                "l": "(II) (2020)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2004)",
+                "l": "(I) (2004)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2016)",
+                "l": "(I) (2016)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2012– )",
+                "l": "(2012– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2015)",
+                "l": "(I) (2015)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2010)",
+                "l": "(II) (2010)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2022)",
+                "l": "(II) (2022)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2011– )",
+                "l": "(2011– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2018)",
+                "l": "(III) (2018)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2014)",
+                "l": "(I) (2014)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2021)",
+                "l": "(II) (2021)"
+              }
+            },
+            {
+              "v": {
+                "v": "(III) (2019)",
+                "l": "(III) (2019)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2013)",
+                "l": "(I) (2013)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2019– )",
+                "l": "(II) (2019– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2020– )",
+                "l": "(II) (2020– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2000)",
+                "l": "(I) (2000)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2012)",
+                "l": "(I) (2012)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2011)",
+                "l": "(I) (2011)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2007– )",
+                "l": "(II) (2007– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2010)",
+                "l": "(I) (2010)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2021)",
+                "l": "(I) (2021)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2021– )",
+                "l": "(II) (2021– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2018– )",
+                "l": "(2018– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2020)",
+                "l": "(I) (2020)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2015– )",
+                "l": "(I) (2015– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(V) (2018)",
+                "l": "(V) (2018)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (1998)",
+                "l": "(II) (1998)"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2017– )",
+                "l": "(II) (2017– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2019– )",
+                "l": "(2019– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(V) (2016)",
+                "l": "(V) (2016)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2020– )",
+                "l": "(2020– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2020– )",
+                "l": "(I) (2020– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(II) (2009)",
+                "l": "(II) (2009)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2012)",
+                "l": "(2012)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2019– )",
+                "l": "(I) (2019– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2016– )",
+                "l": "(2016– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(IV) (2020)",
+                "l": "(IV) (2020)"
+              }
+            },
+            {
+              "v": {
+                "v": "(VI) (2014)",
+                "l": "(VI) (2014)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2013)",
+                "l": "(2013)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2015– )",
+                "l": "(2015– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2015)",
+                "l": "(2015)"
+              }
+            },
+            {
+              "v": {
+                "v": "(IV) (2021)",
+                "l": "(IV) (2021)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2014)",
+                "l": "(2014)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2016)",
+                "l": "(2016)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2017– )",
+                "l": "(2017– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2017)",
+                "l": "(2017)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2018)",
+                "l": "(2018)"
+              }
+            },
+            {
+              "v": {
+                "v": "(V) (2010)",
+                "l": "(V) (2010)"
+              }
+            },
+            {
+              "v": {
+                "v": "(I) (2018– )",
+                "l": "(I) (2018– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2019)",
+                "l": "(2019)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "YEAR",
+    "expression": "grel:value.replace(/\\((\\d{4})\\D?.*\\)/, \"$1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column YEAR using expression grel:value.replace(/\\((\\d{4})\\D?.*\\)/, \"$1\")"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "YEAR",
+          "expression": "value",
+          "columnName": "YEAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(TV Movie)",
+                "l": "(TV Movie)"
+              }
+            },
+            {
+              "v": {
+                "v": "(TV Special)",
+                "l": "(TV Special)"
+              }
+            }
+          ],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "YEAR",
+          "expression": "value",
+          "columnName": "YEAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(1954)",
+                "l": "(1954)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1966)",
+                "l": "(1966)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1978)",
+                "l": "(1978)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1983– )",
+                "l": "(1983– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2002– )",
+                "l": "(2002– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1955)",
+                "l": "(1955)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1967)",
+                "l": "(1967)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1979)",
+                "l": "(1979)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1995– )",
+                "l": "(1995– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1932)",
+                "l": "(1932)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1944)",
+                "l": "(1944)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1956)",
+                "l": "(1956)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2001– )",
+                "l": "(2001– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1968)",
+                "l": "(1968)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1933)",
+                "l": "(1933)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1945)",
+                "l": "(1945)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1957)",
+                "l": "(1957)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1969)",
+                "l": "(1969)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2003– )",
+                "l": "(2003– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1946)",
+                "l": "(1946)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1958)",
+                "l": "(1958)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1984– )",
+                "l": "(1984– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1947)",
+                "l": "(1947)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1985– )",
+                "l": "(1985– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1948)",
+                "l": "(1948)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2010)",
+                "l": "(2010)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1982)",
+                "l": "(1982)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1994)",
+                "l": "(1994)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1997– )",
+                "l": "(1997– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1971)",
+                "l": "(1971)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1983)",
+                "l": "(1983)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1995)",
+                "l": "(1995)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2009– )",
+                "l": "(2009– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1960)",
+                "l": "(1960)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1972)",
+                "l": "(1972)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1984)",
+                "l": "(1984)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1996)",
+                "l": "(1996)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1961)",
+                "l": "(1961)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1973)",
+                "l": "(1973)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1985)",
+                "l": "(1985)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1997)",
+                "l": "(1997)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2010– )",
+                "l": "(2010– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1950)",
+                "l": "(1950)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1962)",
+                "l": "(1962)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1974)",
+                "l": "(1974)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1986)",
+                "l": "(1986)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1998)",
+                "l": "(1998)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1975)",
+                "l": "(1975)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1998– )",
+                "l": "(1998– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1987)",
+                "l": "(1987)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1999)",
+                "l": "(1999)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1952)",
+                "l": "(1952)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1976)",
+                "l": "(1976)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1988)",
+                "l": "(1988)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1999– )",
+                "l": "(1999– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1941)",
+                "l": "(1941)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1953)",
+                "l": "(1953)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1965)",
+                "l": "(1965)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1977)",
+                "l": "(1977)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1989)",
+                "l": "(1989)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2009)",
+                "l": "(2009)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2007– )",
+                "l": "(2007– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1988– )",
+                "l": "(1988– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1990)",
+                "l": "(1990)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1991)",
+                "l": "(1991)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2008– )",
+                "l": "(2008– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(1980)",
+                "l": "(1980)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1992)",
+                "l": "(1992)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1993)",
+                "l": "(1993)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2000)",
+                "l": "(2000)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1938)",
+                "l": "(1938)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2001)",
+                "l": "(2001)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2002)",
+                "l": "(2002)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1992– )",
+                "l": "(1992– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2004)",
+                "l": "(2004)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2004– )",
+                "l": "(2004– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2003)",
+                "l": "(2003)"
+              }
+            },
+            {
+              "v": {
+                "v": "(1993– )",
+                "l": "(1993– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2005)",
+                "l": "(2005)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2006)",
+                "l": "(2006)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2006– )",
+                "l": "(2006– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2007)",
+                "l": "(2007)"
+              }
+            },
+            {
+              "v": {
+                "v": "(2005– )",
+                "l": "(2005– )"
+              }
+            },
+            {
+              "v": {
+                "v": "(2008)",
+                "l": "(2008)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "YEAR",
+    "expression": "grel:value.replace(/\\((\\d{4})\\D?.*\\)/, \"$1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column YEAR using expression grel:value.replace(/\\((\\d{4})\\D?.*\\)/, \"$1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "YEAR",
+    "expression": "grel:value.replace(/\\(\\s*[IVXLCDM]+\\s*\\)/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column YEAR using expression grel:value.replace(/\\(\\s*[IVXLCDM]+\\s*\\)/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "YEAR",
+    "expression": "grel:value.replace(/\\(|\\)/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column YEAR using expression grel:value.replace(/\\(|\\)/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "YEAR",
+    "expression": "grel:value.replace(/\\(|\\)/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column YEAR using expression grel:value.replace(/\\(|\\)/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "YEAR",
+    "expression": "grel:value.replace(/[^0-9–-]/, \"\").trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column YEAR using expression grel:value.replace(/[^0-9–-]/, \"\").trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "YEAR",
+    "expression": "grel:value.split(/[-–]/)[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "Start Year",
+    "columnInsertIndex": 2,
+    "description": "Create column Start Year at index 2 based on column YEAR using expression grel:value.split(/[-–]/)[0]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "YEAR",
+    "expression": "grel:if(value.contains(/[-–]/), value.split(/[-–]/)[1], value.split(/[-–]/)[0])",
+    "onError": "set-to-blank",
+    "newColumnName": "End Year",
+    "columnInsertIndex": 2,
+    "description": "Create column End Year at index 2 based on column YEAR using expression grel:if(value.contains(/[-–]/), value.split(/[-–]/)[1], value.split(/[-–]/)[0])"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "End Year",
+    "index": 3,
+    "description": "Move column End Year to position 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "YEAR",
+    "description": "Remove column YEAR"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RATING",
+    "expression": "grel:if(isBlank(value),0,value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RATING using expression grel:if(isBlank(value),0,value)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "RATING",
+    "expression": "grel:if(value == 0, \"Not Known\",\n   if(and(value > 0, value <= 4.5), \"Flop\",\n      if(and(value > 4.5, value <= 6.5), \"Average\",\n         if(and(value > 6.5, value <= 8.0), \"Hit\",\n            if(value > 8.0, \"Super Hit\", \"Unknown\")\n         )\n      )\n   )\n)",
+    "onError": "set-to-blank",
+    "newColumnName": "Verdict",
+    "columnInsertIndex": 5,
+    "description": "Create column Verdict at index 5 based on column RATING using expression grel:if(value == 0, \"Not Known\",\n   if(and(value > 0, value <= 4.5), \"Flop\",\n      if(and(value > 4.5, value <= 6.5), \"Average\",\n         if(and(value > 6.5, value <= 8.0), \"Hit\",\n            if(value > 8.0, \"Super Hit\", \"Unknown\")\n         )\n      )\n   )\n)"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MOVIES",
+          "expression": "facetCount(value, 'value', 'MOVIES') > 1",
+          "columnName": "MOVIES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "GENRE",
+    "keyColumnName": "MOVIES",
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "description": "Split multi-valued cells in column GENRE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Start Year",
+          "expression": "value",
+          "columnName": "Start Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2020",
+                "l": "2020"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "GENRE",
+    "expression": "grel:value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column GENRE using expression grel:value.trim()"
+  }
+]
